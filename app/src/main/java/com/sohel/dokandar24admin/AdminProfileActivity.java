@@ -1,0 +1,36 @@
+package com.sohel.dokandar24admin;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.viewpager.widget.ViewPager;
+
+import android.os.Bundle;
+
+import com.google.android.material.tabs.TabLayout;
+import com.sohel.dokandar24admin.Adapter.AdminProfileSectionPagerAdapter;
+
+public class AdminProfileActivity extends AppCompatActivity {
+    private Toolbar toolbar;
+    private ViewPager mviewPager;
+    private AdminProfileSectionPagerAdapter sectionPagerAdapter;
+    private TabLayout mTablayot;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_admin_profile);
+
+
+
+        toolbar=findViewById(R.id.appBarId);
+        setSupportActionBar(toolbar);
+        this.setTitle("Admin Profile");
+
+        mviewPager=findViewById(R.id.adminTabpagerid);
+        sectionPagerAdapter=new AdminProfileSectionPagerAdapter(getSupportFragmentManager());
+        mviewPager.setAdapter(sectionPagerAdapter);
+        mTablayot=findViewById(R.id.admin_tabId);
+        mTablayot.setupWithViewPager(mviewPager);
+
+    }
+}

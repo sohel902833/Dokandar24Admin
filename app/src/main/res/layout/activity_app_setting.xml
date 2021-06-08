@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppSettingActivity">
+
+    <include
+        layout="@layout/app_ber_layout"
+        android:id="@+id/appBariId"/>
+
+    <ScrollView
+        android:layout_below="@+id/appBariId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="App Version:"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:id="@+id/versionEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/input_bg_1"
+                android:padding="13dp"
+                android:hint="Version"
+                android:inputType="numberDecimal"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                />
+            <TextView
+                android:layout_marginTop="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update Priority:(set 1 for force update set 0 for simple update popup)"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:id="@+id/priorityEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/input_bg_1"
+                android:padding="13dp"
+                android:hint="Priority"
+                android:inputType="numberDecimal"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="2dp"
+                android:background="@color/purple_500"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:layout_marginTop="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cashout Charge (%)"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:id="@+id/cashoutEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/input_bg_1"
+                android:padding="13dp"
+                android:hint="Cashout Charge"
+                android:inputType="number"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                />
+            <TextView
+                android:layout_marginTop="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send Balance Charge (%)"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:id="@+id/sendBalanceEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/input_bg_1"
+                android:padding="13dp"
+                android:hint="Send Balance Charge"
+                android:inputType="numberDecimal"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                />
+            <TextView
+                android:layout_marginTop="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Convert Cash Charge (%)"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:id="@+id/convertCashEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/input_bg_1"
+                android:padding="13dp"
+                android:hint="Convert Cash Charge"
+                android:inputType="number"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                />
+            <TextView
+                android:layout_marginTop="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Refer Bonous (tk)"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:id="@+id/referBonusEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/input_bg_1"
+                android:padding="13dp"
+                android:hint="Refer Bonous"
+                android:inputType="number"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                />
+            <Button
+                android:id="@+id/updateSettingBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_bg_2"
+                android:text="Update Setting"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:minWidth="120dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="18dp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

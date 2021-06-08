@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <include
+        layout="@layout/app_ber_layout"
+        android:id="@+id/appBariId"/>
+
+    <ScrollView
+        android:layout_below="@+id/appBariId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/adminAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_bg_1"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="17sp"
+                android:text="Admin Account"
+                android:padding="6dp"
+                android:layout_marginRight="15dp"
+                />
+            <Button
+                android:layout_marginTop="10dp"
+                android:id="@+id/cashInRequestButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_bg_1"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="17sp"
+                android:text="Cash In Request"
+                android:padding="6dp"
+                android:layout_marginRight="15dp"
+                /> <Button
+                android:layout_marginTop="10dp"
+                android:id="@+id/appSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_bg_1"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="17sp"
+                android:text="Application Setting"
+                android:padding="6dp"
+                android:layout_marginRight="15dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
